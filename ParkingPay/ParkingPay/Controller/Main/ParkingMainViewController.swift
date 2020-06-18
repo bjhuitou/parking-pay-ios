@@ -71,8 +71,8 @@ public class ParkingMainViewController: PresentBottomVC {
     func initSafeView() {
         var safeBottom: CGFloat = 0.0
         if #available(iOS 11.0, *) {
-            if let app = UIApplication.shared.delegate as? AppDelegate {
-                safeBottom = app.window?.safeAreaInsets.bottom ?? 0
+            if let app = UIApplication.shared.delegate {
+                safeBottom = app.window??.safeAreaInsets.bottom ?? 0
             }
         }
         self.mainViewBottomMaringContraint.constant = safeBottom

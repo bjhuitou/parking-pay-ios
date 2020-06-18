@@ -94,8 +94,8 @@ public class PresentBottom:UIPresentationController {
     public override var frameOfPresentedViewInContainerView: CGRect {
         var safeBottom: CGFloat = 0.0
         if #available(iOS 11.0, *) {
-            if let app = UIApplication.shared.delegate as? AppDelegate {
-                safeBottom = app.window?.safeAreaInsets.bottom ?? 0
+            if let app = UIApplication.shared.delegate {
+                safeBottom = app.window??.safeAreaInsets.bottom ?? 0
             }
         }
         return CGRect(x: 0, y: UIScreen.main.bounds.height-controllerHeight - safeBottom, width: UIScreen.main.bounds.width, height: controllerHeight + safeBottom)

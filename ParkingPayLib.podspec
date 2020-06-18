@@ -73,6 +73,8 @@ Pod::Spec.new do |s|
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
+  s.swift_versions = ['4.2']
+
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -80,7 +82,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "ParkingPay", :tag => s.version.to_s }
+  s.source       = { :git => s.homepage, :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -145,5 +147,6 @@ Pod::Spec.new do |s|
   s.dependency "DTTableViewManager", "6.3.0"
   s.dependency "StatusProvider", "1.2.10"
   s.dependency "AsyncSwift", "2.0.4"
+  s.dependency "R.swift", "5.2.2"
 
 end
