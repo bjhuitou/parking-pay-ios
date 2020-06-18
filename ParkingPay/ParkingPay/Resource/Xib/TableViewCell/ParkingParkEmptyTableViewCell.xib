@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ParkingParkEmptyTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="94b-bx-pHh" customClass="ParkingParkEmptyTableViewCell" customModule="ParkingPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="94b-bx-pHh" id="Jf7-Aq-TkW">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXF-Sg-Hil">
+                        <rect key="frame" x="16" y="0.0" width="382" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ugo-r9-x1g">
+                                <rect key="frame" x="16" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="O96-D6-uzk"/>
+                                    <constraint firstAttribute="width" constant="50" id="iYe-2f-OgA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No nearby parking locations found." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYS-OR-Ed0">
+                                <rect key="frame" x="82" y="0.0" width="178" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPb-rP-3fn">
+                                <rect key="frame" x="276" y="15" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G1j-bc-gXh"/>
+                                    <constraint firstAttribute="width" constant="90" id="Is6-1e-da7"/>
+                                </constraints>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="refreshAction" destination="94b-bx-pHh" eventType="touchUpInside" id="j3f-fU-9HR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90062814950942993" green="0.94048434495925903" blue="0.99041241407394409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ugo-r9-x1g" firstAttribute="top" secondItem="MXF-Sg-Hil" secondAttribute="top" constant="5" id="0Qn-KK-ms6"/>
+                            <constraint firstAttribute="bottom" secondItem="ugo-r9-x1g" secondAttribute="bottom" constant="5" id="D8v-cm-fCA"/>
+                            <constraint firstItem="ugo-r9-x1g" firstAttribute="leading" secondItem="MXF-Sg-Hil" secondAttribute="leading" constant="16" id="N2S-BT-yRI"/>
+                            <constraint firstItem="ugo-r9-x1g" firstAttribute="centerY" secondItem="MXF-Sg-Hil" secondAttribute="centerY" id="OYR-6t-tXo"/>
+                            <constraint firstAttribute="bottom" secondItem="cYS-OR-Ed0" secondAttribute="bottom" id="YM8-TU-A6s"/>
+                            <constraint firstItem="LPb-rP-3fn" firstAttribute="leading" secondItem="cYS-OR-Ed0" secondAttribute="trailing" constant="16" id="ZxD-LT-xQ6"/>
+                            <constraint firstItem="cYS-OR-Ed0" firstAttribute="top" secondItem="MXF-Sg-Hil" secondAttribute="top" id="atL-dJ-dS1"/>
+                            <constraint firstAttribute="trailing" secondItem="LPb-rP-3fn" secondAttribute="trailing" constant="16" id="o5f-MN-O1x"/>
+                            <constraint firstItem="LPb-rP-3fn" firstAttribute="centerY" secondItem="MXF-Sg-Hil" secondAttribute="centerY" id="rQp-aH-F6N"/>
+                            <constraint firstItem="cYS-OR-Ed0" firstAttribute="leading" secondItem="ugo-r9-x1g" secondAttribute="trailing" constant="16" id="xZR-0c-r51"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MXF-Sg-Hil" firstAttribute="leading" secondItem="Jf7-Aq-TkW" secondAttribute="leading" constant="16" id="OeV-1O-SOV"/>
+                    <constraint firstAttribute="bottom" secondItem="MXF-Sg-Hil" secondAttribute="bottom" id="Zg7-L6-8ZO"/>
+                    <constraint firstAttribute="trailing" secondItem="MXF-Sg-Hil" secondAttribute="trailing" constant="16" id="bHN-nt-kIZ"/>
+                    <constraint firstItem="MXF-Sg-Hil" firstAttribute="top" secondItem="Jf7-Aq-TkW" secondAttribute="top" id="c2k-Pi-ojP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-568.1159420289855" y="101.78571428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

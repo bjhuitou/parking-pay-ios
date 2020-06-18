@@ -1,0 +1,17 @@
+{
+    "councils" = "COUNCILS";
+    "loading" = "Loading...";
+    "near me" = "NEAR ME";
+    "no data" = "No Data";
+    "retry load data" = "Reload";
+    "edit plate prompt" = "Add vehicle license plate number(e.g. XYZ1234)";
+    "save" = "Save";
+    "cancel" = "Cancel";
+    "delete plate confirm" = "Are you sure to delete the license plate";
+    "all merchants" = "All Merchants";
+    "shopping mall" = "Shopping Mall";
+    "commercial" = "Commercial";
+    "residential" = "Residential";
+    "location request title" = "The location service is not enabled. Do you want to start it?";
+    "location help message" = "Please enter the system [settings] - > [privacy] - > [location service] to turn on the switch，And allow this program to use location services";
+}

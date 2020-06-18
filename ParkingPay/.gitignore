@@ -1,0 +1,7 @@
+ParkingPay.xcodeproj/xcuserdata/
+ParkingPay.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+ParkingPay.xcodeproj/project.xcworkspace/xcuserdata/
